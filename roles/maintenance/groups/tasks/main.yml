@@ -1,0 +1,9 @@
+---
+- name: "Include groups ..."
+  include_vars: groups.yml
+
+- name: "Maintain groups ..."
+  group:
+    name: "{{ item.name }}"
+    gid: "{{ item.gid }}"
+  with_items: "{{ user_groups }}"
