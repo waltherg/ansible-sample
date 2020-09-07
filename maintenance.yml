@@ -1,0 +1,10 @@
+---
+- hosts: servers
+  remote_user: root
+  roles:
+    - maintenance/basics
+
+- hosts: servers
+  remote_user: root
+  roles:
+    - maintenance/groups
