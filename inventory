@@ -1,0 +1,5 @@
+[servers]
+my_hostname ansible_host=X.X.X.X hostname=my_hostname
+
+[servers:vars]
+ansible_python_interpreter=/usr/bin/python3.6
